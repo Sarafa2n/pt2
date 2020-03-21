@@ -1,0 +1,26 @@
+version: 2
+
+workflows:
+  version: 2
+  dist-compile:
+    jobs:
+      - compile
+
+
+
+jobs:
+  compile:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run: apt update && apt-get install -y sudo && rm -rf /var/lib/apt/lists/*
+      - run: sudo apt update && sudo apt-get install -y gcc g++
+      - run: apt-get install -y g++ make cmake
+      - run: sudo apt install -y libgtest-dev build-essential cmake
+      - run: cd /usr/src/gtest && cmake CMakeLists.txt && make && sudo cp *.a /usr/lib
+      - run: sudo apt update && sudo apt-get install -y cppcheck
+      - run: sudo apt update && sudo apt-get install -y valgrind
+      - run: cd ~/project/
+      - run: chmod +x build.sh
+      - run: ./build.sh && valgrind build/test_realisation build/test_utils build/DZ
