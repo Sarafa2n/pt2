@@ -41,7 +41,7 @@ TEST(test_realisation, small_file) {
         status = 0;
     {
         TimeWork()
-        result_parallel = parallel(filename, 4, &status);
+        result_parallel = parallel(filename,  get_nprocs(), &status);
     }
 
     {
@@ -60,7 +60,7 @@ TEST(test_realisation, large_file) {
 
     {
         TimeWork()
-        result_parallel = parallel(filename, 4, &status);
+        result_parallel = parallel(filename,  get_nprocs(), &status);
     }
 
     {
