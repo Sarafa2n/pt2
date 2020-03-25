@@ -57,7 +57,7 @@ int parallel(const char* filename, int child_count, int* status)
         if (pid < 0)
         {
             printf("Error with fork()\n");
-            exit(EXIT_FAILURE);
+            break;
         }
 
         if (pid == 0)
