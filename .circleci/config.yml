@@ -22,5 +22,5 @@ jobs:
       - run: sudo apt update && sudo apt-get install -y cppcheck
       - run: sudo apt update && sudo apt-get install -y valgrind
       - run: cd ~/project/
-      - run: chmod +x build.sh
-      - run: ./build.sh && valgrind build/test_realisation build/test_utils build/DZ
+      - run: chmod +x build.sh cppcheck.sh test.sh
+      - run: ./build.sh && ./test.sh && ./cppcheck.sh && valgrind build/test_realisation build/test_utils build/DZ

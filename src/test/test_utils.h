@@ -3,8 +3,7 @@
 
 extern "C" {
     #include "../lib/utils.h"
+    #include "../lib/code_error.h"
 }
-
-#define ERROR_CODE 0
 
 #endif

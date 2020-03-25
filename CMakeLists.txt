@@ -11,8 +11,8 @@ target_link_libraries(DZ Sequential Parallel)
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
-add_executable(test_utils src/test/test_utils.cpp src/test/test_utils.h)
-add_executable(test_realisation src/test/test_realisation.cpp src/test/test_realisation.h)
+add_executable(test_utils src/test/test_utils.cpp src/test/test_utils.h src/lib/code_error.h)
+add_executable(test_realisation src/test/test_realisation.cpp src/test/test_realisation.h src/lib/code_error.h)
 
 enable_testing()
 

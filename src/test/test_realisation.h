@@ -4,6 +4,7 @@
 extern "C" {
     #include "../lib/sequential.h"
     #include "../lib/parallel.h"
+    #include "../lib/code_error.h"
     #include <sys/sysinfo.h>
 }
 #include <iostream>
