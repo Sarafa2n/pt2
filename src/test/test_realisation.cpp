@@ -33,6 +33,12 @@ TEST(test_interval, valid_data) {
     EXPECT_EQ(status, 0);
 }
 
+TEST(test_realisation, not_drop) {
+    const char *filename = "../src/test/files/test_1.txt";
+    int status = 0;
+    ASSERT_EXIT((parallel(filename, 4, &status),exit(0)),::testing::ExitedWithCode(0),".*");
+}
+
 TEST(test_realisation, small_file) {
 
     const char *filename = "../src/test/files/test_1.txt";
@@ -41,7 +47,7 @@ TEST(test_realisation, small_file) {
         status = 0;
     {
         TimeWork()
-        result_parallel = parallel(filename,  get_nprocs(), &status);
+        result_parallel = parallel(filename, 4, &status);
     }
 
     {
@@ -60,7 +66,7 @@ TEST(test_realisation, large_file) {
 
     {
         TimeWork()
-        result_parallel = parallel(filename,  get_nprocs(), &status);
+        result_parallel = parallel(filename, 4, &status);
     }
 
     {
