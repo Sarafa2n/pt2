@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/Users/alex/Desktop/Technopark/С:С++/ИЗ2",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wall -Wextra -Werror -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/test_realisation.dir/src/test/test_realisation.cpp.o -c src/test/test_realisation.cpp",
+  "file": "src/test/test_realisation.cpp"
+},
+{
+  "directory": "/Users/alex/Desktop/Technopark/С:С++/ИЗ2",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wall -Wextra -Werror -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/test_utils.dir/src/test/test_utils.cpp.o -c src/test/test_utils.cpp",
+  "file": "src/test/test_utils.cpp"
+},
+{
+  "directory": "/Users/alex/Desktop/Technopark/С:С++/ИЗ2",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -I/usr/local/include   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/DZ.dir/src/main.c.o   -c src/main.c",
+  "file": "src/main.c"
+},
+{
+  "directory": "/Users/alex/Desktop/Technopark/С:С++/ИЗ2/src/lib",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Sequential.dir/utils.c.o   -c src/lib/utils.c",
+  "file": "src/lib/utils.c"
+},
+{
+  "directory": "/Users/alex/Desktop/Technopark/С:С++/ИЗ2/src/lib",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Sequential.dir/sequential.c.o   -c src/lib/sequential.c",
+  "file": "src/lib/sequential.c"
+},
+{
+  "directory": "/Users/alex/Desktop/Technopark/С:С++/ИЗ2/src/lib",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DParallel_EXPORTS   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -o CMakeFiles/Parallel.dir/utils.c.o   -c src/lib/utils.c",
+  "file": "src/lib/utils.c"
+},
+{
+  "directory": "/Users/alex/Desktop/Technopark/С:С++/ИЗ2/src/lib",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DParallel_EXPORTS   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -o CMakeFiles/Parallel.dir/parallel.c.o   -c src/lib/parallel.c",
+  "file": "src/lib/parallel.c"
+},
+{
+  "directory": "/Users/alex/Desktop/Technopark/С:С++/ИЗ2/src/lib",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Utils.dir/utils.c.o   -c src/lib/utils.c",
+  "file": "src/lib/utils.c"
+}
+]
